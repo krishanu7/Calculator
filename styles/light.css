@@ -1,0 +1,110 @@
+/* Set Styling */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #3C79F5;
+    justify-content: center;
+    transition: 0.8s all;
+}
+
+#heading{
+    margin-bottom: 0;
+    color: #FFF5E4;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Style Script', cursive;
+}
+.container {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.util-button{
+    display: flex;
+    align-items: center;
+}
+
+input{
+    padding: 25px;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 70px;
+    background-color: #FFFBEB;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    margin: 0.2em;
+}
+
+#let-calculate{
+    background-color: #FFFBEB;
+    width: 390px;
+    font-size: 1.2rem;
+}
+#result{
+    background-color: #FFFBEB;
+    width: 310px;
+}
+
+.first-row,.second-row,.third-row,.fourth-row,.fifth-row {
+  margin-bottom: 4px;
+}
+
+input[type="button"]:hover {
+  background-color: rgb(51, 47, 89);
+  color: white;
+}
+
+#clear-button {
+  color: #fff;
+  background-color: rgb(255, 25, 25);
+}
+#github-icon {
+  margin-right: 15px;
+}
+
+.theme-button {
+  all: unset;
+  cursor: pointer;
+}
+
+
+.loader-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FFFBEB;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.disappear {
+    animation: faded 1s forwards;
+}
+@keyframes faded {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
